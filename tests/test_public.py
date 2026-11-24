@@ -7,6 +7,11 @@ import lab04 as lab  # noqa: E402
 
 BN = {"Rain": ([], {(): 0.2}), "Wet": (["Rain"], {(True,): 0.9, (False,): 0.1})}
 
+def test_learn_cpts_shape():
+    data = [{"Rain": True, "Wet": True}, {"Rain": False, "Wet": False}]
+    bn = lab.learn_cpts(data, {"Rain": [], "Wet": ["Rain"]})
+    assert set(bn) == {"Rain", "Wet"} and (True,) in bn["Wet"][1]
+
 def test_rain_given_wet():
     d = lab.enumeration_ask("Rain", {"Wet": True}, BN)
     assert abs(d[True] - 0.18 / 0.26) < 1e-6
