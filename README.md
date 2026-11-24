@@ -4,6 +4,9 @@
 
 ▶️ **Watch first:** [Lab 04 walkthrough](https://www.youtube.com/@DrAnandharajan) · 📗 **Lesson & quiz:** [https://anandharajan.github.io/gradient-edu/#lab-4](https://anandharajan.github.io/gradient-edu/#lab-4)
 
+📘 **Lab manual (Ex.No 4):** record notes [Ex.No4.txt](https://github.com/Anandharajan/AIML_Lab/blob/main/experiments/Ex04_Bayesian_Networks/Ex.No4.txt). Use them for Aim/Procedure in REPORT.md and your record. The reference program unlocks in the app once you score 60%.
+
+
 ## Your task
 Open `src/lab04.py` and implement every function marked `TODO`. Do **not** rename functions or
 change their parameters — the autograder calls them exactly as written.
